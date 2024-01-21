@@ -8,8 +8,8 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "link": "yarn link woony-design-system",
-    "build": "rollup -c "
+    "build": "rollup -c ",
+    "update": "yarn link woony-design-system"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
