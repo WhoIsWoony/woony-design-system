@@ -8,6 +8,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
+    "link": "yarn link woony-design-system",
     "build": "rollup -c "
   },
   "devDependencies": {
