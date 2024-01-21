@@ -1,6 +1,7 @@
 // src/index.ts
 import React from "react";
+import "./tailwind.css";
 
 export const MyComponent = () => {
-  return <div>Hello, React Library!</div>;
+  return <div className="mt-40 ml-4">Hello, React Library!</div>;
 };

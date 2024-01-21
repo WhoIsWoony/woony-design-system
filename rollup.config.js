@@ -3,6 +3,9 @@ import { babel } from "@rollup/plugin-babel";
 import typescript from "rollup-plugin-typescript2";
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import postcss from "rollup-plugin-postcss";
+import tailwindcss from "tailwindcss";
+import tailwindConfig from "./tailwind.config.js";
 
 export default {
   input: "src/index.tsx", // 프로젝트 진입점 파일
@@ -14,6 +17,10 @@ export default {
     },
   ],
   plugins: [
+    postcss({
+      extensions: [".css"],
+      plugins: [tailwindcss(tailwindConfig)],
+    }),
     commonjs(),
     nodeResolve(),
     typescript({
