@@ -9,7 +9,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c ",
-    "update": "yarn link woony-design-system"
+    "update": "yarn link & yarn link woony-design-system"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
