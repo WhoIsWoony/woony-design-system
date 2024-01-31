@@ -5,6 +5,7 @@ export interface CommonProps {
 
 export interface ButtonTextProps extends CommonProps {
   onClick: function;
+  type: "button" | "submit" | "reset" | undefined;
 }
 
 export interface TextProps extends CommonProps {
