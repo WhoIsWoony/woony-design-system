@@ -8,7 +8,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc --emitDeclarationOnly & rollup -c ",
+    "build": "rm -rf dist & tsc --emitDeclarationOnly & rollup -c ",
     "update": "yarn link woony-design-system"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 // src/index.ts
 import "./tailwind.css";
-export { default as Button } from "./button/ButtonText";
+export { default as ButtonText } from "./button/ButtonText";
 
 export { HeaderLarge as HeaderLarge } from "./text/TextAll";
 export { HeaderBase as HeaderBase } from "./text/TextAll";
