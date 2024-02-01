@@ -12,6 +12,11 @@ export { TextSmall as TextSmall } from "./text/TextAll";
 export { default as Body } from "./layout/Body";
 export { default as Flex } from "./layout/Flex";
 export { default as FlexHorizontal } from "./layout/FlexHorizontal";
+export { default as Full } from "./layout/Full";
 export { default as Form } from "./layout/Form";
 
 export { default as Input } from "./input/Input";
+
+export { default as Menu } from "./Bar/Menu";
+export { default as Option } from "./Bar/Option";
+export { default as Top } from "./Bar/Top";

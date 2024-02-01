@@ -4,10 +4,10 @@ import {
   Links,
   LiveReload,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Layout from "./layout";
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -23,7 +23,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Layout />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
