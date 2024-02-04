@@ -1,10 +1,10 @@
 import { ButtonText, Body, TextSmall } from "woony-design-system";
 
-export default function Index() {
+export default function Except() {
   return (
     <Body>
       <ButtonText>
-        <TextSmall>Hello</TextSmall>
+        <TextSmall>SaleExcept</TextSmall>
       </ButtonText>
     </Body>
   );

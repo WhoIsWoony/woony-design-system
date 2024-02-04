@@ -22,7 +22,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ height: "100vh" }}>
         <Layout />
         <ScrollRestoration />
         <Scripts />

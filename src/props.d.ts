@@ -1,5 +1,5 @@
 export interface CommonProps {
-  className: string;
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -20,4 +20,20 @@ export interface InputProps extends CommonProps {
 
 export interface FormProps extends CommonProps {
   onSubmit: function;
+}
+
+type MenuType = {
+  key: number;
+  title: string;
+  subMenues: [SubMenuType];
+};
+
+type SubMenuType = {
+  key: number;
+  title: string;
+  url: string;
+};
+
+export interface MenuProps extends CommonProps {
+  menues: [MenuType];
 }

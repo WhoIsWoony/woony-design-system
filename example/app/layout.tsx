@@ -7,21 +7,22 @@ import {
   Top,
   Full,
 } from "woony-design-system";
+import getMenues from "./api/dummy/menues";
 
 const Layout = () => {
+  const menues = getMenues();
+
   return (
-    <>
-      <Flex>
-        <Top />
-        <FlexHorizontal>
-          <Menu />
-          <Full>
-            <Outlet />
-          </Full>
-          <Option />
-        </FlexHorizontal>
-      </Flex>
-    </>
+    <Flex className="h-full">
+      <Top />
+      <FlexHorizontal>
+        <Menu menues={menues} />
+        <Full>
+          <Outlet />
+        </Full>
+        <Option />
+      </FlexHorizontal>
+    </Flex>
   );
 };
 
