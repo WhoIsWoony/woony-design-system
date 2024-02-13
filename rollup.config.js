@@ -6,6 +6,7 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 import postcss from "rollup-plugin-postcss";
 import tailwindcss from "tailwindcss";
 import tailwindConfig from "./tailwind.config.js";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default {
   input: "src/index.tsx", // 프로젝트 진입점 파일
@@ -17,12 +18,13 @@ export default {
     },
   ],
   plugins: [
+    peerDepsExternal(),
+    nodeResolve(),
+    commonjs(),
     postcss({
       extensions: [".css"],
       plugins: [tailwindcss(tailwindConfig)],
     }),
-    commonjs(),
-    nodeResolve(),
     typescript({
       useTsconfigDeclarationDir: true,
       tsconfig: "./tsconfig.json",

@@ -3,7 +3,7 @@ import { HeaderLarge } from "../text/TextAll";
 
 const Top = () => {
   return (
-    <div className="bg-slate-900 text-white p-1">
+    <div className="p-1 shadow-lg">
       <HeaderLarge>CSPLAZA</HeaderLarge>
     </div>
   );
