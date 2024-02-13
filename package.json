@@ -8,8 +8,8 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c ",
-    "update": "yarn link & yarn link woony-design-system"
+    "build": "tsc --emitDeclarationOnly & rollup -c ",
+    "update": "rm -rf dist & yarn unlink & yarn link"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -24,7 +24,18 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^4.9.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "recoil": "^0.7.7",
+    "recoil-persist": "^5.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
