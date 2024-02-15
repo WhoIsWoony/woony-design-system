@@ -5885,7 +5885,7 @@ which@^3.0.0:
   dependencies:
     isexe "^2.0.0"
 
-woony-design-system@../:
+woony-design-system@../../:
   version "1.0.0"
   dependencies:
     tailwindcss "^3.4.1"

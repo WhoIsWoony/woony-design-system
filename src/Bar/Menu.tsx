@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MenuProps, MenuType, SubMenuType } from "../props";
 import { TextBase, TextSmall } from "../text/TextAll";
 
-import { RecoilRoot, atom, useRecoilState } from "recoil";
+import { RecoilEnv, RecoilRoot, atom, useRecoilState } from "recoil";
 import { recoilPersist } from "recoil-persist";
+RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 
 const MenuItem = ({ title, subMenues }: MenuType) => {
   const localStorage =

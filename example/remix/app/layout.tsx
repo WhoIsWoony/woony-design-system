@@ -8,6 +8,7 @@ import {
   Full,
 } from "woony-design-system";
 import getMenues from "./api/dummy/menues";
+import { RecoilRoot } from "recoil";
 
 const Layout = () => {
   const menues = getMenues();
