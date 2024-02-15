@@ -7,6 +7,7 @@ import postcss from "rollup-plugin-postcss";
 import tailwindcss from "tailwindcss";
 import tailwindConfig from "./tailwind.config.js";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import banner2 from "rollup-plugin-banner2";
 
 export default {
   input: "src/index.tsx", // 프로젝트 진입점 파일
@@ -35,6 +36,10 @@ export default {
       include: "src/**/*.(ts|tsx|js|jsx)",
       extensions: [".ts", ".tsx", ".js", ".jsx", ".es", ".es6", ".mjs"],
     }),
+    banner2(
+      () => `'use client'
+    `
+    ),
   ],
   external: ["react", "react-dom"], // 외부 의존성 지정
 };
