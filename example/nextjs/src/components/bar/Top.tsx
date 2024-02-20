@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { HeaderLarge } from "../text/TextAll";
+import { HeaderLarge } from "woony-design-system";
 
 const Top = () => {
   return (

@@ -16,7 +16,3 @@ export { default as Full } from "./layout/Full";
 export { default as Form } from "./layout/Form";
 
 export { default as Input } from "./input/Input";
-
-export { default as Menu } from "./bar/Menu";
-export { default as Option } from "./bar/Option";
-export { default as Top } from "./bar/Top";
